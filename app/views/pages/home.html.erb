@@ -3,9 +3,12 @@
 
 <div class="jumbotron text-center">
 	<h1>Welcome to this class' app.</h1>
-
-	<p>
-		<%= link_to "Log in", "#", class: "btn btn-default" %>
-		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
-	</p>
+	<% if user_signed_in? %>
+		# do something 
+	<% else %>
+			<p>
+				<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
+				<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+			</p>
+	<% end %>
 </div>
