@@ -4,7 +4,7 @@
 <div class="jumbotron text-center">
 	<h1>Welcome to this class' app.</h1>
 	<% if user_signed_in? %>
-		# do something 
+		Welcome to the inside of this app. You're one of the cool kids. This app is funky and doens't do much.
 	<% else %>
 			<p>
 				<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
@@ -12,3 +12,31 @@
 			</p>
 	<% end %>
 </div>
+
+<div class="row">
+	<div class="col-xs-6 well">
+		<h3>Sample heading</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	</div>
+
+	<div class="col-xs-6 well">
+		<h3>Sample heading</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	</div>
+</div><!-- ends div for row 1 -->
+
+<% if user_signed_in? %> 
+<div class="row well" id="home_well">
+	<div class="col-lg-12">
+		<p>Welcome to being signed in to this app. It currently doesn't do very much but I'm still hoping to charge you to post. <hr> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div><!-- end 12 row 2 -->
+<% end %> <!-- end show only if user signed in -->
+
+</div><!-- end row with well -->
