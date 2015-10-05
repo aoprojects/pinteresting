@@ -1,16 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div id= "EachPin" class= "container">
+	<div class="well">
 
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
+		<p>
+			<%= image_tag @pin.image.url(:medium) %>
+		</p>
 
-<p>
-  <strong>String:</strong>
-  <%= @pin.string %>
-</p>
+		<p>
+		  <strong>Description:</strong>
+		  <%= @pin.description %>
+		</p>
 
-<% if @pin.user == current_user %>
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<% end %>
-<%= link_to 'Back', pins_path %>
+		<p>
+		  <strong>String:</strong>
+		  <%= @pin.string %>
+		</p>
+
+	
+		<%= link_to 'New Pin', new_pin_path %> |
+		<% if @pin.user == current_user %>
+		<%= link_to 'Edit', edit_pin_path(@pin) %> |
+		<% end %>
+		<%= link_to 'All Pins', pins_path %>
+	</div>
+</div>

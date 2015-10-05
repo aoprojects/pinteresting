@@ -4,9 +4,11 @@
 <div class="jumbotron text-center">
 	<h1>Welcome to this class' app.</h1>
 	<% if user_signed_in? %>
-		Welcome to the inside of this app. You're one of the cool kids. This app is funky and doens't do much.
+		<%= link_to "See All Pins", pins_path, class: "btn btn-success"%>
+		<%= link_to "Create New Pin", new_pin_path, class: "btn btn-success"%>
 	<% else %>
 			<p>
+				<%= link_to "See All Pins", pins_path, class: "btn btn-success"%>
 				<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
 				<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
 			</p>

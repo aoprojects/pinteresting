@@ -1,10 +1,9 @@
 
-$body-bg:				#66FF66; 		
-$navbar-default-brand-hover-color:		green;
+$body-bg:				white; 		
+$navbar-default-brand-hover-color:		white;
 $navbar-default-color:					#CCFF66;
 $jumbotron-bg: 			#990066;
 $jumbotron-color:		red;
-
 
 @import 'bootstrap';
 
@@ -16,8 +15,16 @@ $jumbotron-color:		red;
 	padding: 15px;
 }
 
+#EachPin {
+	text-align: center;
+}
+
+#EachPin well {
+	width: 50%;
+}
+
 #home_well {
-	background-color: yellow;
+	background-color: #FDD5B1;
 }
 
 hr {
@@ -25,6 +32,7 @@ hr {
 }
 
 footer {
-	background-color: blue;
-	color: white;
+	background-color: #FEFAF1;
+	color: red;
+	text-align: right;
 }
