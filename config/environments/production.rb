@@ -80,7 +80,7 @@ Rails.application.configure do
   # Required for Heroku
   config.action_mailer.default_url_options = { host: 'omr-alo-pinteresting.herokuapp.com' }
 
-  # config/environments/production.rb
+  # copied from dev center site on heroku for amazon sdk
   # Required for aws-sdk gem to work for working with Paperclip
   config.paperclip_defaults = {
     :storage => :s3,
