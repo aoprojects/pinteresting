@@ -34,6 +34,11 @@ gem 'aws-sdk', '~> 2.1'
 
 gem 'masonry-rails'
 
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.0.6'
+
+gem 'will_paginate-bootstrap'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

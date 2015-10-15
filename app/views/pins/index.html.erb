@@ -3,7 +3,12 @@
 <%= render 'pages/home' %>
 
 <h1 class="text-center">All Pins</h1>
-<br>
+
+<div>
+  <%= will_paginate @pages, renderer: BootstrapPagination::Rails, class: 'pull-right' %>
+</div><!-- ptop agination div -->
+
+<br><br><br>
 
 <!-- all pins display here on the pins index view -->
   <div id="pins" class="transitions-enabled">
@@ -23,6 +28,10 @@
       </div><!-- close box for jquery -->
     <% end %>
   </div>
+<br>
 
+<div>
+<%= will_paginate @pages, renderer: BootstrapPagination::Rails %>
+</div>
 
-
+<br><br><br>
